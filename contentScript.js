@@ -134,10 +134,13 @@
         if (albumFilled) fieldsFilledCount++;
       }
 
-      // Fill artist name
-      if (metadata.artistName) {
-        console.log('Attempting to fill artist name:', metadata.artistName);
-        const artistFilled = fillArtistName(metadata.artistName);
+      // Fill artist name from panel input (user must manually enter it)
+      const artistInput = document.getElementById('panel-artist-input');
+      const artistName = artistInput?.value?.trim();
+      
+      if (artistName) {
+        console.log('Attempting to fill artist name:', artistName);
+        const artistFilled = fillArtistName(artistName);
         if (artistFilled) {
           fieldsFilledCount++;
           console.log('✓ Artist name filled successfully');
@@ -145,7 +148,7 @@
           console.log('✗ Failed to fill artist name');
         }
       } else {
-        console.log('No artist name in metadata:', metadata);
+        console.log('No artist name entered in panel input');
       }
 
       // Fill track titles (with custom tags)
@@ -832,7 +835,7 @@
             <h4>Album Info</h4>
             <div class="form-group">
               <label>Artist Name:</label>
-              <input type="text" id="panel-artist-input" placeholder="Artist Name" value="${metadata?.artistName || ''}">
+              <input type="text" id="panel-artist-input" placeholder="Enter Artist Name" value="">
             </div>
             <div class="form-group">
               <label>Album Title:</label>
@@ -1854,8 +1857,9 @@
     }
     
     // Autofill override fields
-    if (artistInput && metadata?.artistName) {
-      artistInput.value = metadata.artistName;
+    // Artist name is intentionally left blank - user must specify it manually
+    if (artistInput) {
+      artistInput.value = '';
     }
     
     if (albumInput && metadata?.albumTitle) {
