@@ -163,6 +163,15 @@
         }
       }
       
+      // Select instrumental radio buttons if checkbox is checked
+      if (customFields.instrumental) {
+        console.log('Selecting instrumental radio buttons...');
+        const instrumentalFilled = selectInstrumentalRadios();
+        if (instrumentalFilled) {
+          fieldsFilledCount++;
+          console.log('✓ Instrumental radio buttons selected');
+        }
+      }
 
       if (fieldsFilledCount > 0) {
         showNotification(`✓ Successfully filled ${fieldsFilledCount} field(s).`, 'success', 3000);
@@ -355,6 +364,67 @@
     return false;
   }
 
+  // Select instrumental radio buttons for all tracks
+  function selectInstrumentalRadios() {
+    console.log('Selecting instrumental radio buttons for all tracks');
+    
+    let radiosSelectedCount = 0;
+    
+    // Find all radio buttons that indicate instrumental/no lyrics
+    // DistroKid uses radio buttons with specific values or labels
+    const allRadios = document.querySelectorAll('input[type="radio"]');
+    
+    console.log(`Found ${allRadios.length} total radio buttons`);
+    
+    allRadios.forEach((radio, index) => {
+      // Check if this radio button is for instrumental/no lyrics
+      // Look at the value, name, id, or associated label
+      const value = (radio.value || '').toLowerCase();
+      const name = (radio.name || '').toLowerCase();
+      const id = (radio.id || '').toLowerCase();
+      
+      // Find associated label
+      let labelText = '';
+      if (radio.id) {
+        const label = document.querySelector(`label[for="${radio.id}"]`);
+        if (label) {
+          labelText = label.textContent.toLowerCase();
+        }
+      }
+      
+      // Also check parent label
+      const parentLabel = radio.closest('label');
+      if (parentLabel) {
+        labelText += ' ' + parentLabel.textContent.toLowerCase();
+      }
+      
+      // Check if this is an instrumental/no lyrics option
+      const isInstrumental = (
+        value.includes('instrumental') ||
+        value.includes('no lyrics') ||
+        labelText.includes('instrumental') ||
+        labelText.includes('no lyrics') ||
+        labelText.includes('contains no lyrics')
+      );
+      
+      if (isInstrumental && isVisible(radio)) {
+        radio.checked = true;
+        radio.dispatchEvent(new Event('change', { bubbles: true }));
+        radio.dispatchEvent(new Event('click', { bubbles: true }));
+        radiosSelectedCount++;
+        console.log(`✓ Selected instrumental radio ${index + 1}: ${labelText || value}`);
+      }
+    });
+    
+    if (radiosSelectedCount > 0) {
+      console.log(`✓ Selected ${radiosSelectedCount} instrumental radio buttons`);
+      return true;
+    } else {
+      console.log('No instrumental radio buttons found or visible');
+      return false;
+    }
+  }
+
   // Fill songwriter fields for all tracks
   function fillSongwriterFields(firstName, lastName) {
     if (!firstName || !lastName) {
@@ -403,6 +473,14 @@
   async function fillTrackTitles(tracks) {
     // Get custom fields
     const customFields = await getCustomFields();
+    
+    // Reverse tracks array if reverseOrder is enabled
+    let tracksToFill = tracks;
+    if (customFields.reverseOrder) {
+      tracksToFill = [...tracks].reverse();
+      console.log('Applying tracklist in reverse order');
+    }
+    
     const selectors = [
       'input[name*="song" i][name*="title" i]',
       'input[name*="track" i][name*="title" i]',
@@ -447,11 +525,11 @@
 
     // Fill track titles
     let filledCount = 0;
-    const maxTracks = Math.min(tracks.length, trackInputs.length);
+    const maxTracks = Math.min(tracksToFill.length, trackInputs.length);
     
     for (let i = 0; i < maxTracks; i++) {
-      if (tracks[i] && tracks[i].title) {
-        let title = tracks[i].title;
+      if (tracksToFill[i] && tracksToFill[i].title) {
+        let title = tracksToFill[i].title;
         
         // Apply custom tag if set
         if (customFields.tag && customFields.tag.trim()) {
@@ -779,6 +857,18 @@
                 <option value="append" ${customFields.tagPosition === 'append' ? 'selected' : ''}>Append (Title + Tag)</option>
                 <option value="random" ${customFields.tagPosition === 'random' ? 'selected' : ''}>Random</option>
               </select>
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="panel-instrumental" ${customFields.instrumental ? 'checked' : ''}>
+                Instrumental (no lyrics)
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="panel-reverse-order" ${customFields.reverseOrder ? 'checked' : ''}>
+                Apply tracklist in reverse order
+              </label>
             </div>
           </div>
           
@@ -1146,6 +1236,38 @@
     return title.replace(/[^a-z0-9\s\-_]/gi, '').trim();
   }
 
+  // Format seconds to MM:SS timestamp
+  function formatTimestamp(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+  }
+
+  // Get audio duration from blob
+  function getAudioDuration(blob) {
+    return new Promise((resolve) => {
+      try {
+        const audio = new Audio();
+        const url = URL.createObjectURL(blob);
+        
+        audio.addEventListener('loadedmetadata', () => {
+          URL.revokeObjectURL(url);
+          resolve(audio.duration || 0);
+        });
+        
+        audio.addEventListener('error', () => {
+          URL.revokeObjectURL(url);
+          resolve(0);
+        });
+        
+        audio.src = url;
+      } catch (error) {
+        console.error('Error getting audio duration:', error);
+        resolve(0);
+      }
+    });
+  }
+
   // Create persistent download progress indicator
   function createPersistentProgressIndicator() {
     const progressDiv = document.createElement('div');
@@ -1208,8 +1330,10 @@
         }
 
         const playlistData = await response.json();
+        console.log('Playlist API response:', playlistData);
         clips = playlistData.playlist_clips?.map(item => item.clip) || [];
         detectedAlbumTitle = playlistData.name || 'Suno Playlist';
+        console.log('Extracted clips:', clips);
       } catch (playlistError) {
         // Try as single song
         const songResponse = await fetch(`https://studio-api.prod.suno.com/api/feed/${playlistId}`, {
@@ -1287,10 +1411,18 @@
 
           downloadFiles.set(fileName, audioBlob);
 
+          // Get duration from the actual audio file
+          progressText.textContent = `Analyzing ${trackNumber}/${clips.length}: ${trackTitle}`;
+          const duration = await getAudioDuration(audioBlob);
+          
+          // Debug logging
+          console.log(`Track ${trackNumber}: ${trackTitle}, Duration: ${duration}s (from audio file)`);
+
           tracks.push({
             trackNumber,
             fileName,
             title: trackTitle,
+            duration: duration,
           });
 
           const overallProgress = Math.round(((i + 1) / clips.length) * 100);
@@ -1312,6 +1444,23 @@
 
       // Add meta.json to files for download
       downloadFiles.set('meta.json', new Blob([JSON.stringify(metaJson, null, 2)], { type: 'application/json' }));
+
+      // Create YouTube-style timestamped tracklist
+      let currentTime = 0;
+      const tracklistLines = [];
+      
+      console.log('Creating tracklist with tracks:', tracks);
+      
+      for (const track of tracks) {
+        const timestamp = formatTimestamp(currentTime);
+        tracklistLines.push(`${timestamp} - ${track.title}`);
+        console.log(`Tracklist entry: ${timestamp} - ${track.title} (duration: ${track.duration}s, next start: ${currentTime + track.duration}s)`);
+        currentTime += track.duration;
+      }
+      
+      const tracklistContent = tracklistLines.join('\n');
+      console.log('Final tracklist content:', tracklistContent);
+      downloadFiles.set('tracklist.txt', new Blob([tracklistContent], { type: 'text/plain' }));
 
       progressText.textContent = 'Creating ZIP file...';
       
@@ -1496,6 +1645,8 @@
     const tagPosition = document.getElementById('panel-tag-position');
     const songwriterFirstInput = document.getElementById('panel-songwriter-first');
     const songwriterLastInput = document.getElementById('panel-songwriter-last');
+    const instrumentalCheckbox = document.getElementById('panel-instrumental');
+    const reverseOrderCheckbox = document.getElementById('panel-reverse-order');
     
     if (tagInput && tagPosition) {
       const saveCustomFields = () => {
@@ -1503,7 +1654,9 @@
           tag: tagInput.value,
           tagPosition: tagPosition.value,
           songwriterFirst: songwriterFirstInput ? songwriterFirstInput.value : '',
-          songwriterLast: songwriterLastInput ? songwriterLastInput.value : ''
+          songwriterLast: songwriterLastInput ? songwriterLastInput.value : '',
+          instrumental: instrumentalCheckbox ? instrumentalCheckbox.checked : false,
+          reverseOrder: reverseOrderCheckbox ? reverseOrderCheckbox.checked : false
         };
         
         chrome.storage.local.set({ customFields }, () => {
@@ -1520,6 +1673,14 @@
       
       if (songwriterLastInput) {
         songwriterLastInput.addEventListener('input', saveCustomFields);
+      }
+      
+      if (instrumentalCheckbox) {
+        instrumentalCheckbox.addEventListener('change', saveCustomFields);
+      }
+      
+      if (reverseOrderCheckbox) {
+        reverseOrderCheckbox.addEventListener('change', saveCustomFields);
       }
     }
 

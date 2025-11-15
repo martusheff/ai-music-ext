@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "DistroKid Autofill & Suno Helper",
+  "name": "AI Music Ext",
   "version": "2.0.0",
   "description": "Auto-fill DistroKid album upload form and capture Suno.com bearer tokens",
   "permissions": [
