@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIMusicHelper</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 400px;
+      min-height: 300px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+
+    h1 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .section {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #1557b0;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    .folder-info {
+      margin-top: 12px;
+      padding: 12px;
+      background: #f8f9fa;
+      border-radius: 6px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .folder-name {
+      font-weight: 600;
+      color: #1a73e8;
+      margin-bottom: 4px;
+    }
+
+    .metadata-preview {
+      margin-top: 12px;
+    }
+
+    .metadata-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .album-info {
+      background: #f8f9fa;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+
+    .album-info div {
+      margin-bottom: 4px;
+    }
+
+    .album-info strong {
+      color: #333;
+    }
+
+    .tracks-list {
+      max-height: 200px;
+      overflow-y: auto;
+      background: #f8f9fa;
+      border-radius: 6px;
+      padding: 10px;
+    }
+
+    .track-item {
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      background: white;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #555;
+      border-left: 3px solid #1a73e8;
+    }
+
+    .track-number {
+      font-weight: 600;
+      color: #1a73e8;
+      margin-right: 8px;
+    }
+
+    .no-data {
+      text-align: center;
+      color: #999;
+      font-size: 13px;
+      padding: 20px;
+    }
+
+    .status-message {
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-top: 12px;
+    }
+
+    .status-success {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+
+    .status-error {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .clear-button {
+      background: #dc3545;
+      margin-top: 8px;
+    }
+
+    .clear-button:hover {
+      background: #c82333;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .custom-field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .custom-field label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    .custom-field input[type="text"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    .custom-field select {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 13px;
+      background: white;
+    }
+
+    .tokens-container {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .token-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+      margin-bottom: 6px;
+      background: #f8f9fa;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: monospace;
+    }
+
+    .token-preview {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #555;
+    }
+
+    .copy-token-btn {
+      background: #28a745;
+      padding: 4px 10px;
+      font-size: 12px;
+      width: auto;
+      margin-left: 8px;
+    }
+
+    .copy-token-btn:hover {
+      background: #218838;
+    }
+
+    .no-tokens {
+      color: #999;
+      font-style: italic;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 13px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>DistroKid Autofill & Suno Helper</h1>
+
+  <div class="section">
+    <button id="selectFolderBtn">Select Album Folder</button>
+    <input type="file" id="folderInput" webkitdirectory directory multiple />
+    
+    <div id="folderInfo" class="folder-info hidden">
+      <div class="folder-name" id="folderName"></div>
+      <div id="fileCount"></div>
+    </div>
+
+    <div id="statusMessage" class="status-message hidden"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Custom Fields</div>
+    <div class="custom-field">
+      <label for="tagInput">Tag:</label>
+      <input type="text" id="tagInput" placeholder="Enter tag (e.g., [Remix], (Demo))">
+      <select id="tagPosition">
+        <option value="prepend">Prepend</option>
+        <option value="append">Append</option>
+        <option value="random">Random</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Suno Bearer Tokens</div>
+    <div id="tokensContainer" class="tokens-container">
+      <div class="no-tokens">No tokens captured yet. Visit suno.com to capture tokens.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="metadata-title">Album Metadata</div>
+    <div id="metadataPreview">
+      <div class="no-data">No album selected</div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

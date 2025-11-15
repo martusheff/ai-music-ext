@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "DistroKid Autofill & Suno Helper",
+  "version": "2.0.0",
+  "description": "Auto-fill DistroKid album upload form and capture Suno.com bearer tokens",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "webRequest",
+    "clipboardWrite",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://distrokid.com/*",
+    "*://*.suno.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://distrokid.com/*", "https://suno.com/*"],
+      "js": ["jszip.min.js", "contentScript.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
