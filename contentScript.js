@@ -20,12 +20,21 @@
     return;
   }
   
-  // For DistroKid, only run on upload pages
-  if (isDistroKid && !window.location.href.includes('/new') && 
-      !window.location.href.includes('/upload') &&
-      !window.location.href.includes('/album')) {
-    console.log('Not on a DistroKid upload page, exiting');
-    return;
+  // For DistroKid, check if we're on an upload page or allow manual activation
+  const isLikelyUploadPage = isDistroKid && (
+    window.location.href.includes('/new') || 
+    window.location.href.includes('/upload') ||
+    window.location.href.includes('/album') ||
+    window.location.href.includes('/release') ||
+    window.location.href.includes('/single') ||
+    window.location.pathname.includes('/upload') ||
+    document.title.toLowerCase().includes('upload') ||
+    document.title.toLowerCase().includes('release')
+  );
+  
+  if (isDistroKid && !isLikelyUploadPage) {
+    console.log('Not on a detected DistroKid upload page, but will still show helper button. Current URL:', window.location.href);
+    // Still show the button for manual activation, but with a note
   }
   
   console.log(`On ${isDistroKid ? 'DistroKid' : 'Suno'} page, initializing...`);
@@ -38,10 +47,21 @@
   }
 
   function init() {
+    console.log('Initializing extension...');
+    console.log('Document ready state:', document.readyState);
+    console.log('Current URL:', window.location.href);
+    
     // Wait for dynamic content to load
     setTimeout(() => {
+      console.log('Attempting to inject autofill button...');
       injectAutofillButton();
     }, 1000);
+    
+    // Also try again after a longer delay in case the page is still loading
+    setTimeout(() => {
+      console.log('Second attempt to inject autofill button...');
+      injectAutofillButton();
+    }, 3000);
   }
 
   // UI Injection
@@ -50,8 +70,11 @@
   function injectAutofillButton() {
     // Check if button already exists
     if (document.getElementById('distrokid-fab')) {
+      console.log('Button already exists, skipping injection');
       return;
     }
+
+    console.log('Creating floating action button...');
 
     // Create main FAB
     const fab = document.createElement('button');
@@ -70,7 +93,28 @@
       fab.textContent = 'Autofill';
     }
 
+    // Ensure the button is visible and properly styled
+    fab.style.cssText = `
+      position: fixed !important;
+      bottom: 20px !important;
+      right: 20px !important;
+      z-index: 999999 !important;
+      padding: 8px 12px !important;
+      background: #f0f0f0 !important;
+      color: #333 !important;
+      border: 1px solid #ccc !important;
+      border-radius: 4px !important;
+      font-size: 12px !important;
+      font-family: system-ui, -apple-system, sans-serif !important;
+      cursor: pointer !important;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    `;
+
     document.body.appendChild(fab);
+    console.log('Button injected successfully:', fab);
 
     // FAB click toggles main panel
     let isPanelOpen = false;
@@ -176,8 +220,19 @@
       if (fieldsFilledCount > 0) {
         showNotification(`✓ Successfully filled ${fieldsFilledCount} field(s).`, 'success', 3000);
       } else {
+        // Debug: show available form fields
+        console.log('=== DEBUG: Available form fields ===');
+        const allInputs = document.querySelectorAll('input, textarea, select');
+        console.log(`Found ${allInputs.length} total form elements:`);
+        
+        allInputs.forEach((input, index) => {
+          if (isVisible(input)) {
+            console.log(`${index + 1}. ${input.tagName} - name: "${input.name}", id: "${input.id}", placeholder: "${input.placeholder}", class: "${input.className}"`);
+          }
+        });
+        
         showNotification(
-          'Could not find any fields to fill. The page structure may have changed.',
+          'Could not find any fields to fill. Check console for available form fields. The page structure may have changed.',
           'warning'
         );
       }
@@ -226,6 +281,8 @@
 
   // Fill album/release title
   function fillAlbumTitle(title) {
+    console.log('Attempting to fill album title:', title);
+    
     const selectors = [
       'input[name*="album" i][name*="title" i]',
       'input[name*="release" i][name*="title" i]',
@@ -234,7 +291,12 @@
       'input[name*="album" i]:not([type="file"]):not([type="checkbox"]):not([type="radio"])',
       'input[aria-label*="album" i][aria-label*="title" i]',
       'textarea[name*="album" i]',
-      'textarea[placeholder*="album" i]'
+      'textarea[placeholder*="album" i]',
+      // Additional modern selectors
+      'input[data-testid*="album"]',
+      'input[data-cy*="album"]',
+      'input[class*="album" i][class*="title" i]',
+      'input[id*="album" i][id*="title" i]'
     ];
 
     for (const selector of selectors) {
