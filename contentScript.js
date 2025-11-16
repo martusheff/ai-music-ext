@@ -1,14 +1,11 @@
-// ============================================================================
 // DistroKid Autofill & Suno Helper - Content Script
-// ============================================================================
-// This script provides auto-fill functionality for DistroKid album uploads
-// and Suno playlist downloads directly on the respective websites.
-// ============================================================================
+// Provides auto-fill functionality for DistroKid album uploads
+// and Suno playlist downloads
 
 (function() {
   'use strict';
 
-  // ===== INITIALIZATION =====
+  // Initialization
 
   console.log('DistroKid Autofill extension loaded');
   console.log('Chrome API available:', typeof chrome !== 'undefined');
@@ -47,7 +44,7 @@
     }, 1000);
   }
 
-  // ===== UI INJECTION =====
+  // UI Injection
 
   // Inject the floating action button that opens main panel
   function injectAutofillButton() {
@@ -96,7 +93,7 @@
     };
   }
 
-  // ===== DISTROKID AUTO-FILL FUNCTIONS =====
+  // DistroKid Auto-fill Functions
 
   // Handle auto-fill button click
   async function handleAutofill() {
@@ -198,7 +195,7 @@
     }
   }
 
-  // ===== STORAGE & DATA FUNCTIONS =====
+  // Storage & Data Functions
 
   // Get stored metadata from chrome.storage
   function getStoredMetadata() {
@@ -225,7 +222,7 @@
     });
   }
 
-  // ===== FORM FILLING FUNCTIONS =====
+  // Form Filling Functions
 
   // Fill album/release title
   function fillAlbumTitle(title) {
@@ -557,7 +554,7 @@
     return filledCount;
   }
 
-  // ===== INPUT MANIPULATION HELPERS =====
+  // Input Manipulation Helpers
 
   // Set input value and trigger events to ensure frameworks detect the change
   function setInputValue(input, value) {
@@ -881,9 +878,25 @@
         </div>
       `;
     } else if (isSuno) {
-      panelHTML += `        
-        <div class="tab-pane active" id="download-tab">
+      panelHTML += `
+        <div class="tab-nav">
+          <button class="tab-btn active" data-tab="general-tab">General</button>
+          <button class="tab-btn" data-tab="download-tab">Download</button>
+        </div>
+        
+        <div class="tab-pane active" id="general-tab">
           <div class="tab-section">
+            <h4>Quick Actions</h4>
+            <div class="form-group">
+              <button id="select-all-songs-btn" class="primary-btn">Select All Visible Songs</button>
+              <p style="font-size: 12px; color: #666; margin-top: 8px;">Selects all songs currently visible on the page. Scroll down to load more, then click again.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-pane" id="download-tab">
+          <div class="tab-section">
+            <h4>Playlist Download</h4>
             <div class="form-group">
               <label for="playlist-url-input">Playlist URL or ID:</label>
               <input type="text" id="playlist-url-input" placeholder="Playlist URL or ID" value="${getCurrentPlaylistId()}" style="color: #333; background: #fff;">
@@ -993,77 +1006,7 @@
     });
   }
 
-  // ===== HTML GENERATION FUNCTIONS =====
-
-  // Generate metadata preview HTML
-  function generateMetadataPreview(metadata) {
-    if (!metadata || !metadata.tracks || metadata.tracks.length === 0) {
-      return '<div class="no-data">No tracks found</div>';
-    }
-
-    let html = '<div class="album-info">';
-    
-    if (metadata.albumTitle) {
-      html += `<div><strong>Album:</strong> ${escapeHtml(metadata.albumTitle)}</div>`;
-    }
-    
-    if (metadata.artistName) {
-      html += `<div><strong>Artist:</strong> ${escapeHtml(metadata.artistName)}</div>`;
-    }
-    
-    html += `<div><strong>Tracks:</strong> ${metadata.tracks.length}</div>`;
-    html += '</div>';
-
-    html += '<div class="tracks-list">';
-    metadata.tracks.forEach(track => {
-      html += `
-        <div class="track-item">
-          <span class="track-number">${track.trackNumber}.</span>
-          ${escapeHtml(track.title)}
-        </div>
-      `;
-    });
-    html += '</div>';
-
-    return html;
-  }
-
-  // Generate tokens list HTML
-  function generateTokensList(tokens) {
-    if (!tokens || tokens.length === 0) {
-      return '<div class="no-tokens">No tokens captured yet. Visit suno.com to capture tokens.</div>';
-    }
-    
-    let html = '';
-    tokens.forEach((token, index) => {
-      const previewText = token.length > 20 
-        ? `${token.substring(0, 20)}...` 
-        : token;
-      
-      html += `
-        <div class="token-item">
-          <span class="token-preview" title="${escapeHtml(token)}">${escapeHtml(previewText)}</span>
-          <button class="copy-token-btn" onclick="copyTokenToClipboard('${escapeHtml(token)}')">Copy</button>
-        </div>
-      `;
-    });
-    
-    return html;
-  }
-
-  // Generate latest token display (compact single row)
-  function generateLatestTokenDisplay(token) {
-    const previewText = token.length > 30 
-      ? `${token.substring(0, 30)}...` 
-      : token;
-    
-    return `
-      <div class="latest-token-item">
-        <span class="token-preview" title="${escapeHtml(token)}">${escapeHtml(previewText)}</span>
-        <button class="copy-token-btn" onclick="copyTokenToClipboard('${escapeHtml(token)}')">Copy</button>
-      </div>
-    `;
-  }
+  // HTML Helpers
 
   // Escape HTML to prevent XSS
   function escapeHtml(text) {
@@ -1109,25 +1052,6 @@
     }
   }
 
-  // Setup tab navigation
-  function setupTabNavigation() {
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabPanes = document.querySelectorAll('.tab-pane');
-    
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const targetTab = btn.getAttribute('data-tab');
-        
-        // Remove active class from all tabs and panes
-        tabBtns.forEach(b => b.classList.remove('active'));
-        tabPanes.forEach(p => p.classList.remove('active'));
-        
-        // Add active class to clicked tab and corresponding pane
-        btn.classList.add('active');
-        document.getElementById(`${targetTab}-tab`).classList.add('active');
-      });
-    });
-  }
 
   // Get current playlist ID from URL if on a playlist page
   function getCurrentPlaylistId() {
@@ -1154,7 +1078,44 @@
     return input;
   }
 
-  // ===== SUNO DOWNLOAD FUNCTIONS =====
+  // Suno Download Functions
+
+  // Select all songs on Suno page
+  function selectAllSunoSongs() {
+    try {
+      // Find all multi-select button containers
+      const selectContainers = document.querySelectorAll('.multi-select-button');
+      
+      if (selectContainers.length === 0) {
+        console.log('No song checkboxes found');
+        return;
+      }
+      
+      let selectedCount = 0;
+      
+      // Click each button that isn't already selected
+      selectContainers.forEach(container => {
+        const button = container.querySelector('button');
+        if (!button) return;
+        
+        // Check if already selected by looking for the checkmark icon
+        // Selected state has a different SVG path or the hover-only class is present
+        const notHoverOnly = container.querySelector('.not-hover-only');
+        const hoverOnly = container.querySelector('.hover-only');
+        
+        // If not-hover-only is visible and hover-only exists, it's NOT selected
+        // Only click if it's not already selected
+        if (notHoverOnly && hoverOnly) {
+          button.click();
+          selectedCount++;
+        }
+      });
+      
+      console.log(`Selected ${selectedCount} visible songs`);
+    } catch (error) {
+      console.error('Error selecting songs:', error);
+    }
+  }
 
   // Helper functions for WAV conversion
   async function checkWavExists(songId, token) {
@@ -1687,6 +1648,24 @@
       }
     }
 
+    // Tab switching for Suno
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.getAttribute('data-tab');
+        
+        // Update button states
+        tabButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Update tab panes
+        document.querySelectorAll('.tab-pane').forEach(pane => {
+          pane.classList.remove('active');
+        });
+        document.getElementById(targetTab)?.classList.add('active');
+      });
+    });
+
     // Override fields auto-save
     const artistInput = document.getElementById('panel-artist-input');
     const albumInput = document.getElementById('panel-album-input');
@@ -1730,6 +1709,14 @@
             closeMainPanel();
           });
         }
+      });
+    }
+
+    // Select all songs button (Suno)
+    const selectAllBtn = document.getElementById('select-all-songs-btn');
+    if (selectAllBtn) {
+      selectAllBtn.addEventListener('click', () => {
+        selectAllSunoSongs();
       });
     }
 
@@ -1829,7 +1816,7 @@
     }
   }
 
-  // ===== PANEL UI FUNCTIONS =====
+  // Panel UI Functions
 
   // Update metadata display in the panel
   function updateMetadataDisplay(metadata) {
@@ -1884,7 +1871,7 @@
     });
   }
 
-  // ===== UTILITY FUNCTIONS =====
+  // Utility Functions
 
   // Show notification toast
   function showNotification(message, type = 'info', duration = 3000) {

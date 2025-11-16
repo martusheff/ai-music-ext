@@ -1,11 +1,5 @@
-// ============================================================================
 // DistroKid Autofill & Suno Helper - Popup Script
-// ============================================================================
-// This script manages the extension popup UI and handles folder selection,
-// metadata processing, and token display.
-// ============================================================================
-
-// ===== DOM ELEMENTS =====
+// Manages extension popup UI, folder selection, and token display
 
 const selectFolderBtn = document.getElementById('selectFolderBtn');
 const folderInput = document.getElementById('folderInput');
@@ -18,7 +12,6 @@ const tokensContainer = document.getElementById('tokensContainer');
 const tagInput = document.getElementById('tagInput');
 const tagPosition = document.getElementById('tagPosition');
 
-// ===== INITIALIZATION ======
 
 // Initialize popup
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   loadCustomFields();
 });
 
-// ===== EVENT LISTENERS =====
 
 // Trigger folder selection
 selectFolderBtn.addEventListener('click', () => {
@@ -64,7 +56,6 @@ folderInput.addEventListener('change', async (event) => {
   }
 });
 
-// ===== FOLDER PROCESSING =====
 
 // Process folder and extract metadata
 async function processFolder(files) {
@@ -128,7 +119,6 @@ function parseTrackTitle(filename) {
   return title;
 }
 
-// ===== STORAGE FUNCTIONS =====
 
 // Save metadata to chrome.storage.local
 async function saveMetadata(metadata) {
@@ -157,7 +147,6 @@ function loadStoredMetadata() {
   });
 }
 
-// ===== UI DISPLAY FUNCTIONS =====
 
 // Display metadata in preview
 function displayMetadata(metadata) {
@@ -230,7 +219,6 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
-// ===== CUSTOM FIELDS FUNCTIONALITY =====
 
 // Save custom fields when they change
 tagInput.addEventListener('input', saveCustomFields);
@@ -256,7 +244,6 @@ function loadCustomFields() {
   });
 }
 
-// ===== BEARER TOKEN DISPLAY =====
 
 // Load and display bearer tokens
 function loadBearerTokens() {

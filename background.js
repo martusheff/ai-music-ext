@@ -1,17 +1,8 @@
-// ============================================================================
 // DistroKid Autofill & Suno Helper - Background Script
-// ============================================================================
-// This service worker captures Bearer tokens from Suno.com API requests
-// and makes them available to the popup and content scripts.
-// ============================================================================
-
-// ===== TOKEN STORAGE =====
+// Captures Bearer tokens from Suno.com API requests
 
 let capturedTokens = [];
 
-// ===== NETWORK REQUEST LISTENER =====
-
-// Listen for network requests to capture bearer tokens from Suno.com
 chrome.webRequest.onBeforeSendHeaders.addListener(
   (details) => {
     const authHeader = details.requestHeaders.find(
@@ -40,9 +31,6 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
   ["requestHeaders", "extraHeaders"]
 );
 
-// ===== MESSAGE HANDLER =====
-
-// Listen for messages from popup and content scripts
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === 'getTokens') {
     sendResponse({ tokens: capturedTokens });
