@@ -1,0 +1,18 @@
+curl 'https://studio-api.prod.suno.com/api/project/9bf8204f-7b2d-46f8-861e-1d5e8347fa90' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9,ru;q=0.8' \
+  -H 'authorization: Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18yT1o2eU1EZzhscWRKRWloMXJvemY4T3ptZG4iLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJzdW5vLWFwaSIsImF6cCI6Imh0dHBzOi8vc3Vuby5jb20iLCJleHAiOjE3NjQ1NDYwNzIsImZ2YSI6WzkzNDAzLC0xXSwiaHR0cHM6Ly9zdW5vLmFpL2NsYWltcy9jbGVya19pZCI6InVzZXJfMzJrcjJVMUxPakoxaTloYmp0NWJub2NhVXhhIiwiaHR0cHM6Ly9zdW5vLmFpL2NsYWltcy9lbWFpbCI6bnVsbCwiaHR0cHM6Ly9zdW5vLmFpL2NsYWltcy9waG9uZSI6IisxNTAzNTUxMzcwNCIsImlhdCI6MTc2NDU0MjQ3MiwiaXNzIjoiaHR0cHM6Ly9jbGVyay5zdW5vLmNvbSIsImp0aSI6IjM0ZDFiMjdkMTllZmFjNDQ0MTgzIiwibmJmIjoxNzY0NTQyNDYyLCJzaWQiOiJzZXNzXzMzR0wyVnpUa3FyTzlXWlpDaUl3c09XQmZKQyIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfMzJrcjJVMUxPakoxaTloYmp0NWJub2NhVXhhIn0.mnqFRWSvVcjOVvfJ2HO3b9Qtx7XEh2KHn-Q7JrN_NeML5CvY9A5Gv7qoA12pft_GPKP6vNRMnGrYaJqpDeW_JFHYs03qddBOXoOtV4qZ1Bsn3Mc80ZJ2XEG1I_ty4UnilPTZwERpIRB_f-8YE6icHvA_Py333mYgsGIaIBOhhCU8Om8bnpgT8ufjQVDW9JKu1zMI-7RpuQKLBr-vs7anZa7IhuI0k6qjYGpAJbIuRvv9fNZJ_X2YiPNCmFSOCljokH6qT_ncvdEr_OLM-Z99fFsymxthh8DJC74HNVH1BlmrgDlZw4SNB_Q1tzJY4wZ102_5Sqld818odGGHJv1GhQ' \
+  -H 'browser-token: {"token":"eyJ0aW1lc3RhbXAiOjE3NjQ1NDI0NzMwNjJ9"}' \
+  -H 'cache-control: no-cache' \
+  -H 'device-id: 29578670-768f-4d36-ab2f-a0d56eb39501' \
+  -H 'origin: https://suno.com' \
+  -H 'pragma: no-cache' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://suno.com/' \
+  -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'

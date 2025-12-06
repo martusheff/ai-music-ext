@@ -958,10 +958,35 @@
         
         <div class="tab-pane" id="download-tab">
           <div class="tab-section">
+            <h4>Workspace Download</h4>
+            <div class="form-group">
+              <label for="workspace-url-input">Workspace URL or ID:</label>
+              <input type="text" id="workspace-url-input" placeholder="Paste workspace URL (e.g., suno.com/create?wid=...) or just the ID" value="${getCurrentPlaylistId()}" style="color: #333; background: #fff;">
+              <p style="font-size: 11px; color: #666; margin-top: 4px;">Downloads all songs from a workspace automatically.</p>
+            </div>
+            <div class="form-group">
+              <label for="workspace-format-select">Format:</label>
+              <select id="workspace-format-select" style="color: #333; background: #fff;">
+                <option value="wav" selected>WAV</option>
+                <option value="mp3">MP3</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="workspace-save-to-zip" checked>
+                Save to ZIP file
+              </label>
+              <p style="font-size: 11px; color: #666; margin-top: 4px;">If unchecked, downloads each song as a separate file.</p>
+            </div>
+            <button id="download-workspace-btn" class="primary-btn" style="margin-bottom: 20px;">Download Workspace</button>
+          </div>
+          
+          <div class="tab-section">
             <h4>Playlist Download</h4>
             <div class="form-group">
               <label for="playlist-url-input">Playlist URL or ID:</label>
-              <input type="text" id="playlist-url-input" placeholder="Playlist URL or ID" value="${getCurrentPlaylistId()}" style="color: #333; background: #fff;">
+              <input type="text" id="playlist-url-input" placeholder="Paste playlist URL (e.g., suno.com/playlist/...) or just the ID" value="" style="color: #333; background: #fff;">
+              <p style="font-size: 11px; color: #666; margin-top: 4px;">Downloads all songs from a playlist.</p>
             </div>
             <div class="form-group">
               <label for="audio-format-select">Format:</label>
@@ -970,11 +995,20 @@
                 <option value="mp3">MP3</option>
               </select>
             </div>
-            <div id="token-status" class="token-status hidden">
-              <div class="token-expired">
-                <span>⚠️ Bearer token expired or unavailable</span>
-                <button id="refresh-page-btn" class="refresh-btn">Refresh Page</button>
-              </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="playlist-save-to-zip" checked>
+                Save to ZIP file
+              </label>
+              <p style="font-size: 11px; color: #666; margin-top: 4px;">If unchecked, downloads each song as a separate file.</p>
+            </div>
+            <button id="download-playlist-btn" class="primary-btn">Download Playlist</button>
+          </div>
+          
+          <div id="token-status" class="token-status hidden">
+            <div class="token-expired">
+              <span>⚠️ Bearer token expired or unavailable</span>
+              <button id="refresh-page-btn" class="refresh-btn">Refresh Page</button>
             </div>
           </div>
         </div>
@@ -992,10 +1026,6 @@
           <span class="btn-text">Auto-fill DistroKid Form</span>
           <span class="btn-close" onclick="window.distrokidTogglePanel()">×</span>
         </button>
-      `;
-    } else if (isSuno) {
-      panelHTML += `
-        <button id="download-playlist-btn" class="primary-btn">Download Suno Playlist</button>
       `;
     }
     
@@ -1115,21 +1145,31 @@
   }
 
 
-  // Get current playlist ID from URL if on a playlist page
+  // Get current playlist or workspace ID from URL
   function getCurrentPlaylistId() {
     const url = window.location.href;
     const playlistMatch = url.match(/\/playlist\/([a-f0-9-]+)/);
-    return playlistMatch ? playlistMatch[1] : '';
+    if (playlistMatch) return playlistMatch[1];
+    
+    // Check for workspace ID (wid parameter)
+    const workspaceMatch = url.match(/[?&]wid=([a-f0-9-]+)/);
+    return workspaceMatch ? workspaceMatch[1] : '';
   }
 
-  // Extract playlist ID from URL or return as-is if already an ID
+  // Extract playlist or workspace ID from URL or return as-is if already an ID
   function extractPlaylistId(input) {
     if (!input) return '';
     
     // If it's a full URL, extract the ID
-    const urlMatch = input.match(/\/playlist\/([a-f0-9-]+)/);
-    if (urlMatch) {
-      return urlMatch[1];
+    const playlistMatch = input.match(/\/playlist\/([a-f0-9-]+)/);
+    if (playlistMatch) {
+      return playlistMatch[1];
+    }
+    
+    // Check for workspace ID (wid parameter)
+    const workspaceMatch = input.match(/[?&]wid=([a-f0-9-]+)/);
+    if (workspaceMatch) {
+      return workspaceMatch[1];
     }
     
     // If it looks like a UUID, return as-is
@@ -1138,6 +1178,23 @@
     }
     
     return input;
+  }
+
+  // Detect if input is a workspace URL or ID
+  function isWorkspaceId(input) {
+    if (!input) return false;
+    
+    // Check if URL contains wid parameter
+    if (input.includes('wid=')) {
+      return true;
+    }
+    
+    // Check if URL contains /create path (workspace pages)
+    if (input.includes('/create')) {
+      return true;
+    }
+    
+    return false;
   }
 
   // Suno Download Functions
@@ -1321,7 +1378,7 @@
   }
 
   // Download playlist from Suno with individual file downloads
-  async function downloadPlaylist(playlistId, format, token) {
+  async function downloadPlaylist(playlistId, format, token, saveToZip = true) {
     // Create or get persistent download progress indicator
     let progressDiv = document.getElementById('persistent-download-progress');
     if (!progressDiv) {
@@ -1488,16 +1545,30 @@
       console.log('Final tracklist content:', tracklistContent);
       downloadFiles.set('tracklist.txt', new Blob([tracklistContent], { type: 'text/plain' }));
 
-      progressText.textContent = 'Creating ZIP file...';
-      
-      // Create and download ZIP file using JSZip
-      await createAndDownloadZipWithJSZip(downloadFiles, detectedAlbumTitle, format);
-      
-      progressText.textContent = 'Download complete!';
-      progressPercent.textContent = '100%';
-      progressFill.style.width = '100%';
-      
-      showNotification(`✓ Downloaded ${tracks.length} tracks in ${format.toUpperCase()} format!`, 'success', 5000);
+      // Download based on user preference
+      if (saveToZip) {
+        progressText.textContent = 'Creating ZIP file...';
+        
+        // Create and download ZIP file using JSZip
+        await createAndDownloadZipWithJSZip(downloadFiles, detectedAlbumTitle, format);
+        
+        progressText.textContent = 'Download complete!';
+        progressPercent.textContent = '100%';
+        progressFill.style.width = '100%';
+        
+        showNotification(`✓ Downloaded ${tracks.length} tracks in ${format.toUpperCase()} format as ZIP!`, 'success', 5000);
+      } else {
+        progressText.textContent = 'Downloading individual files...';
+        
+        // Download files individually
+        await downloadIndividualFiles(downloadFiles, detectedAlbumTitle, format);
+        
+        progressText.textContent = 'Download complete!';
+        progressPercent.textContent = '100%';
+        progressFill.style.width = '100%';
+        
+        showNotification(`✓ Downloaded ${tracks.length} tracks in ${format.toUpperCase()} format as individual files!`, 'success', 5000);
+      }
       
       setTimeout(() => {
         progressDiv.classList.add('hidden');
@@ -1505,6 +1576,245 @@
       
     } catch (error) {
       console.error('Download error:', error);
+      progressText.textContent = 'Download failed';
+      progressPercent.textContent = '';
+      progressFill.style.width = '0%';
+      
+      showNotification(`Error: ${error.message}`, 'error', 5000);
+      
+      setTimeout(() => {
+        progressDiv.classList.add('hidden');
+      }, 3000);
+    }
+  }
+
+  // Download workspace from Suno using page-based pagination
+  async function downloadWorkspace(workspaceId, format, token, saveToZip = true) {
+    // Create or get persistent download progress indicator
+    let progressDiv = document.getElementById('persistent-download-progress');
+    if (!progressDiv) {
+      progressDiv = createPersistentProgressIndicator();
+    }
+    
+    const progressText = progressDiv.querySelector('#persistent-progress-text');
+    const progressPercent = progressDiv.querySelector('#persistent-progress-percent');
+    const progressFill = progressDiv.querySelector('#persistent-progress-fill');
+    
+    progressDiv.classList.remove('hidden');
+    
+    try {
+      // Fetch first page to get total clip count
+      progressText.textContent = 'Fetching workspace metadata from Suno...';
+      
+      const firstPageResponse = await fetch(`https://studio-api.prod.suno.com/api/project/${workspaceId}?page=1`, {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Accept': '*/*',
+          'Origin': 'https://suno.com',
+          'Referer': 'https://suno.com/',
+        },
+      });
+
+      if (!firstPageResponse.ok) {
+        throw new Error(`Failed to fetch workspace: ${firstPageResponse.status} ${firstPageResponse.statusText}`);
+      }
+
+      const firstPageData = await firstPageResponse.json();
+      console.log('Workspace API page 1 response:', firstPageData);
+      
+      const workspaceName = firstPageData.name || 'Suno Workspace';
+      const totalClips = firstPageData.clip_count || 0;
+      
+      if (totalClips === 0) {
+        throw new Error('No songs found in workspace. Please check your ID and try again.');
+      }
+      
+      // Calculate total pages (assuming 20 clips per page)
+      const clipsPerPage = 20;
+      const totalPages = Math.ceil(totalClips / clipsPerPage);
+      
+      console.log(`Found ${totalClips} total clips in workspace. Calculated ${totalPages} pages to fetch.`);
+      
+      // Construct all page URLs
+      const pageUrls = [];
+      for (let page = 1; page <= totalPages; page++) {
+        pageUrls.push(`https://studio-api.prod.suno.com/api/project/${workspaceId}?page=${page}`);
+      }
+      
+      console.log(`Constructed ${pageUrls.length} URLs to fetch:`, pageUrls);
+      
+      // Fetch all pages
+      const allClips = [];
+      for (let i = 0; i < pageUrls.length; i++) {
+        const pageNum = i + 1;
+        progressText.textContent = `Fetching page ${pageNum}/${totalPages}...`;
+        progressPercent.textContent = `${Math.round((i / totalPages) * 100)}%`;
+        progressFill.style.width = `${Math.round((i / totalPages) * 100)}%`;
+        
+        const pageResponse = await fetch(pageUrls[i], {
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': '*/*',
+            'Origin': 'https://suno.com',
+            'Referer': 'https://suno.com/',
+          },
+        });
+
+        if (!pageResponse.ok) {
+          console.warn(`Failed to fetch page ${pageNum}, continuing with available clips...`);
+          continue;
+        }
+
+        const pageData = await pageResponse.json();
+        const pageClips = pageData.project_clips?.map(item => item.clip) || [];
+        allClips.push(...pageClips);
+        
+        console.log(`Page ${pageNum}: Retrieved ${pageClips.length} clips. Total so far: ${allClips.length}/${totalClips}`);
+      }
+      
+      console.log(`Successfully retrieved ${allClips.length} clips out of ${totalClips}`);
+      
+      if (allClips.length === 0) {
+        throw new Error('No songs found in workspace. Please check your ID and try again.');
+      }
+
+      // Collect files for individual download
+      const downloadFiles = new Map();
+      const tracks = [];
+      
+      for (let i = 0; i < allClips.length; i++) {
+        const clip = allClips[i];
+        const trackNumber = i + 1;
+        const trackTitle = clip.title || `Track ${trackNumber}`;
+        const cleanTitle = cleanFileName(trackTitle);
+        const fileExtension = format === 'wav' ? 'wav' : 'mp3';
+        const fileName = `${String(trackNumber).padStart(2, '0')} - ${cleanTitle}.${fileExtension}`;
+
+        progressText.textContent = `Processing ${trackNumber}/${allClips.length}: ${trackTitle}`;
+        
+        try {
+          let audioUrl = clip.audio_url;
+
+          // Handle WAV format conversion
+          if (format === 'wav') {
+            progressText.textContent = `Converting ${trackNumber}/${allClips.length}: ${trackTitle}`;
+            
+            // Check if WAV already exists
+            let wavUrl = await checkWavExists(clip.id, token);
+            
+            if (!wavUrl) {
+              // Request conversion
+              const converted = await convertToWav(clip.id, token);
+              if (!converted) {
+                throw new Error('Failed to initiate WAV conversion');
+              }
+              
+              // Wait for conversion
+              wavUrl = await waitForWav(clip.id, token);
+              if (!wavUrl) {
+                throw new Error('WAV conversion timed out');
+              }
+            }
+            
+            audioUrl = wavUrl;
+          }
+
+          if (!audioUrl) {
+            throw new Error('No audio URL available');
+          }
+
+          progressText.textContent = `Downloading ${trackNumber}/${allClips.length}: ${trackTitle}`;
+          
+          const audioBlob = await downloadAudioFile(audioUrl, (progress) => {
+            const overallProgress = Math.round(((i + progress/100) / allClips.length) * 100);
+            progressPercent.textContent = `${overallProgress}%`;
+            progressFill.style.width = `${overallProgress}%`;
+          });
+
+          downloadFiles.set(fileName, audioBlob);
+
+          // Get duration from the actual audio file
+          progressText.textContent = `Analyzing ${trackNumber}/${allClips.length}: ${trackTitle}`;
+          const duration = await getAudioDuration(audioBlob);
+          
+          // Debug logging
+          console.log(`Track ${trackNumber}: ${trackTitle}, Duration: ${duration}s (from audio file)`);
+
+          tracks.push({
+            trackNumber,
+            fileName,
+            title: trackTitle,
+            duration: duration,
+          });
+
+          const overallProgress = Math.round(((i + 1) / allClips.length) * 100);
+          progressPercent.textContent = `${overallProgress}%`;
+          progressFill.style.width = `${overallProgress}%`;
+        } catch (error) {
+          console.error(`Error downloading ${trackTitle}:`, error);
+          // Continue with other tracks
+        }
+      }
+
+      // Create metadata
+      const metaJson = {
+        albumTitle: workspaceName,
+        artistName: allClips[0]?.metadata?.tags || 'Suno Artist',
+        primaryGenre: allClips[0]?.display_tags || allClips[0]?.metadata?.tags || 'Electronic',
+        tracks,
+      };
+
+      // Add meta.json to files for download
+      downloadFiles.set('meta.json', new Blob([JSON.stringify(metaJson, null, 2)], { type: 'application/json' }));
+
+      // Create YouTube-style timestamped tracklist
+      let currentTime = 0;
+      const tracklistLines = [];
+      
+      console.log('Creating tracklist with tracks:', tracks);
+      
+      for (const track of tracks) {
+        const timestamp = formatTimestamp(currentTime);
+        tracklistLines.push(`${timestamp} - ${track.title}`);
+        console.log(`Tracklist entry: ${timestamp} - ${track.title} (duration: ${track.duration}s, next start: ${currentTime + track.duration}s)`);
+        currentTime += track.duration;
+      }
+      
+      const tracklistContent = tracklistLines.join('\n');
+      console.log('Final tracklist content:', tracklistContent);
+      downloadFiles.set('tracklist.txt', new Blob([tracklistContent], { type: 'text/plain' }));
+
+      // Download based on user preference
+      if (saveToZip) {
+        progressText.textContent = 'Creating ZIP file...';
+        
+        // Create and download ZIP file using JSZip
+        await createAndDownloadZipWithJSZip(downloadFiles, workspaceName, format);
+        
+        progressText.textContent = 'Download complete!';
+        progressPercent.textContent = '100%';
+        progressFill.style.width = '100%';
+        
+        showNotification(`✓ Downloaded ${tracks.length} tracks from workspace in ${format.toUpperCase()} format as ZIP!`, 'success', 5000);
+      } else {
+        progressText.textContent = 'Downloading individual files...';
+        
+        // Download files individually
+        await downloadIndividualFiles(downloadFiles, workspaceName, format);
+        
+        progressText.textContent = 'Download complete!';
+        progressPercent.textContent = '100%';
+        progressFill.style.width = '100%';
+        
+        showNotification(`✓ Downloaded ${tracks.length} tracks from workspace in ${format.toUpperCase()} format as individual files!`, 'success', 5000);
+      }
+      
+      setTimeout(() => {
+        progressDiv.classList.add('hidden');
+      }, 3000);
+      
+    } catch (error) {
+      console.error('Workspace download error:', error);
       progressText.textContent = 'Download failed';
       progressPercent.textContent = '';
       progressFill.style.width = '0%';
@@ -1782,15 +2092,63 @@
       });
     }
 
+    // Download workspace button
+    const downloadWorkspaceBtn = document.getElementById('download-workspace-btn');
+    if (downloadWorkspaceBtn) {
+      downloadWorkspaceBtn.addEventListener('click', async () => {
+        const urlInput = document.getElementById('workspace-url-input');
+        const formatSelect = document.getElementById('workspace-format-select');
+        const saveToZipCheckbox = document.getElementById('workspace-save-to-zip');
+        
+        const inputValue = urlInput.value.trim();
+        const workspaceId = extractPlaylistId(inputValue);
+        const format = formatSelect.value;
+        const saveToZip = saveToZipCheckbox ? saveToZipCheckbox.checked : true;
+        
+        if (!workspaceId) {
+          showNotification('Please enter a valid workspace URL or ID', 'error');
+          return;
+        }
+        
+        // Get the most recent token
+        const tokens = await getBearerTokens();
+        if (!tokens || tokens.length === 0) {
+          showNotification('No bearer tokens found. Please refresh the page and visit suno.com to capture a new token.', 'error', 8000);
+          return;
+        }
+        
+        const token = tokens[0];
+        if (!token || token.length < 10) {
+          showNotification('Invalid bearer token. Please refresh the page and visit suno.com to capture a new token.', 'error', 8000);
+          return;
+        }
+        
+        try {
+          console.log('Downloading workspace:', workspaceId, 'saveToZip:', saveToZip);
+          await downloadWorkspace(workspaceId, format, token, saveToZip);
+        } catch (error) {
+          if (error.message.includes('401') || error.message.includes('403') || error.message.includes('Unauthorized')) {
+            showTokenExpiredStatus();
+            showNotification('Bearer token expired. Please refresh the page and visit suno.com to capture a new token.', 'error', 8000);
+          } else {
+            throw error;
+          }
+        }
+      });
+    }
+
     // Download playlist button
-    const downloadBtn = document.getElementById('download-playlist-btn');
-    if (downloadBtn) {
-      downloadBtn.addEventListener('click', async () => {
+    const downloadPlaylistBtn = document.getElementById('download-playlist-btn');
+    if (downloadPlaylistBtn) {
+      downloadPlaylistBtn.addEventListener('click', async () => {
         const urlInput = document.getElementById('playlist-url-input');
         const formatSelect = document.getElementById('audio-format-select');
+        const saveToZipCheckbox = document.getElementById('playlist-save-to-zip');
         
-        const playlistId = extractPlaylistId(urlInput.value.trim());
+        const inputValue = urlInput.value.trim();
+        const playlistId = extractPlaylistId(inputValue);
         const format = formatSelect.value;
+        const saveToZip = saveToZipCheckbox ? saveToZipCheckbox.checked : true;
         
         if (!playlistId) {
           showNotification('Please enter a valid playlist URL or ID', 'error');
@@ -1811,7 +2169,8 @@
         }
         
         try {
-          await downloadPlaylist(playlistId, format, token);
+          console.log('Downloading playlist:', playlistId, 'saveToZip:', saveToZip);
+          await downloadPlaylist(playlistId, format, token, saveToZip);
         } catch (error) {
           if (error.message.includes('401') || error.message.includes('403') || error.message.includes('Unauthorized')) {
             showTokenExpiredStatus();

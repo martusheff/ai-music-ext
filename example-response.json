@@ -1,0 +1,1759 @@
+{
+    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+    "name": "GOTS 4,5,6,7",
+    "description": "",
+    "project_clips": [
+        {
+            "clip": {
+                "status": "complete",
+                "title": "The Last Flicker Died",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "95220c7f-ce30-4cee-acbd-298a467a5135",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/95220c7f-ce30-4cee-acbd-298a467a5135.mp3",
+                "image_url": "https://cdn2.suno.ai/image_95220c7f-ce30-4cee-acbd-298a467a5135.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_95220c7f-ce30-4cee-acbd-298a467a5135.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "southern folk. quiet but fierce rhythmic male vocals with a steady thudding delivery. acoustic guitar drives the rhythm, folk, adding a mournful tone. the texture is sparse but deliberate, dark folk, rhythmic, every note carrying weight. 150-240 seconds runtime., paired with subtle percussive knocks. a haunting harmonica or fiddle emerges sparingly, male vocals",
+                    "prompt": "[Verse]\nThe candle\u2019s breath was thin\nIt swayed\nShadows crawled where the walls decayed\nA clock that never struck the hour\nA room where time lost all its power\nIn the corner\nThe air stood still\nQuiet and waiting for the kill\n\n[Chorus]\nWhen the last flicker died\nNo one stayed to mourn or fight\nCold swept in\nA thief\nA tide\nAnd the last flicker died\n\n[Verse 2]\nThe chair still rocked though no one sat\nA whisper broke\nThen folded flat\nA map with lines\nNo roads to take\nA compass spinning in its ache\nThe window showed no dawn\nNo sky\nJust emptiness that bled the eye\n\n[Prechorus]\nAnd they had hands but they did not hold\nEyes that blinked but did not behold\n\n[Chorus]\nWhen the last flicker died\nNo one stayed to mourn or fight\nCold swept in\nA thief\nA tide\nAnd the last flicker died\n\n[Bridge]\nYou said there\u2019d be a reckoning\nBut the birds don\u2019t care\nThey don\u2019t sing\nThe fields grow weeds\nThe wells run dry\nEven the ground forgot to cry",
+                    "gpt_description_prompt": "The Last Flicker Died\n\ndark Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 197.24,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:07:40.244Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "southern folk, dark folk, acoustic",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 1
+            },
+            "relative_index": 137.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "The Last Flicker Died",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "ecceae37-5afe-472b-8b3e-3c7f5979ced7",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/ecceae37-5afe-472b-8b3e-3c7f5979ced7.mp3",
+                "image_url": "https://cdn2.suno.ai/image_ecceae37-5afe-472b-8b3e-3c7f5979ced7.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_ecceae37-5afe-472b-8b3e-3c7f5979ced7.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "southern folk. quiet but fierce rhythmic male vocals with a steady thudding delivery. acoustic guitar drives the rhythm, folk, adding a mournful tone. the texture is sparse but deliberate, dark folk, rhythmic, every note carrying weight. 150-240 seconds runtime., paired with subtle percussive knocks. a haunting harmonica or fiddle emerges sparingly, male vocals",
+                    "prompt": "[Verse]\nThe candle\u2019s breath was thin\nIt swayed\nShadows crawled where the walls decayed\nA clock that never struck the hour\nA room where time lost all its power\nIn the corner\nThe air stood still\nQuiet and waiting for the kill\n\n[Chorus]\nWhen the last flicker died\nNo one stayed to mourn or fight\nCold swept in\nA thief\nA tide\nAnd the last flicker died\n\n[Verse 2]\nThe chair still rocked though no one sat\nA whisper broke\nThen folded flat\nA map with lines\nNo roads to take\nA compass spinning in its ache\nThe window showed no dawn\nNo sky\nJust emptiness that bled the eye\n\n[Prechorus]\nAnd they had hands but they did not hold\nEyes that blinked but did not behold\n\n[Chorus]\nWhen the last flicker died\nNo one stayed to mourn or fight\nCold swept in\nA thief\nA tide\nAnd the last flicker died\n\n[Bridge]\nYou said there\u2019d be a reckoning\nBut the birds don\u2019t care\nThey don\u2019t sing\nThe fields grow weeds\nThe wells run dry\nEven the ground forgot to cry",
+                    "gpt_description_prompt": "The Last Flicker Died\n\ndark Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 198.28,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:07:40.244Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "southern folk, dark folk, acoustic",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 0
+            },
+            "relative_index": 136.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "The Last Flicker Died",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "498176af-135d-4bb9-919d-7ab6d7b596ca",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/498176af-135d-4bb9-919d-7ab6d7b596ca.mp3",
+                "image_url": "https://cdn2.suno.ai/image_498176af-135d-4bb9-919d-7ab6d7b596ca.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_498176af-135d-4bb9-919d-7ab6d7b596ca.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "dark americana folk, with raw texture and restrained dynamics. subtle fiddle harmonics and faint harmonica wails hover in the background, with sparse bass drum thuds adding weight. the delivery is intense and deliberate, male vocals, folk, creating a haunting atmosphere., percussive guitar pattern drives the song, southern folk. quiet but fierce rhythmic male vocals. a steady, rhythmic",
+                    "prompt": "[Verse 1]\nFingers run rough over splintered wood\nThe table's bare\nBut the memory stood\nChoked on the smoke of a fire gone cold\nAshes whisper secrets only time has told\n\n[Chorus]\nThe last flicker died\nBut the shadows remain\nCarved in the bones of the land\nThe strain\nYou can't steal the roots\nYou can't sell the pride\nWhen the last flicker died\nWhen the last flicker died\n\n[Verse 2]\nA hammer still hangs where it used to ring\nCalloused hands once made the anvils sing\nNow the echoes fade\nBut the ground still hums\nLike the quiet breath of a war not won\n\n[Prechorus]\nThey took the shine\nBut not the fight\nA dim-lit road in the edge of night\n\n[Chorus]\nThe last flicker died\nBut the shadows remain\nCarved in the bones of the land\nThe strain\nYou can't steal the roots\nYou can't sell the pride\nWhen the last flicker died\nWhen the last flicker died\n\n[Bridge]\nThe rail runs straight\nBut the train don\u2019t call\nEmpty grain bins by the silo wall\nStill the wind carries voices low\nOf what was planted long ago",
+                    "gpt_description_prompt": "The Last Flicker Died\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 209.04,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:07:05.392Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "dark americana, folk, southern folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 1
+            },
+            "relative_index": 135.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "The Last Flicker Died",
+                "play_count": 1,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "1c5bc34d-ea1b-42a9-8879-6026b94ffcab",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/1c5bc34d-ea1b-42a9-8879-6026b94ffcab.mp3",
+                "image_url": "https://cdn2.suno.ai/image_1c5bc34d-ea1b-42a9-8879-6026b94ffcab.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_1c5bc34d-ea1b-42a9-8879-6026b94ffcab.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "dark americana folk, with raw texture and restrained dynamics. subtle fiddle harmonics and faint harmonica wails hover in the background, with sparse bass drum thuds adding weight. the delivery is intense and deliberate, male vocals, folk, creating a haunting atmosphere., percussive guitar pattern drives the song, southern folk. quiet but fierce rhythmic male vocals. a steady, rhythmic",
+                    "prompt": "[Verse 1]\nFingers run rough over splintered wood\nThe table's bare\nBut the memory stood\nChoked on the smoke of a fire gone cold\nAshes whisper secrets only time has told\n\n[Chorus]\nThe last flicker died\nBut the shadows remain\nCarved in the bones of the land\nThe strain\nYou can't steal the roots\nYou can't sell the pride\nWhen the last flicker died\nWhen the last flicker died\n\n[Verse 2]\nA hammer still hangs where it used to ring\nCalloused hands once made the anvils sing\nNow the echoes fade\nBut the ground still hums\nLike the quiet breath of a war not won\n\n[Prechorus]\nThey took the shine\nBut not the fight\nA dim-lit road in the edge of night\n\n[Chorus]\nThe last flicker died\nBut the shadows remain\nCarved in the bones of the land\nThe strain\nYou can't steal the roots\nYou can't sell the pride\nWhen the last flicker died\nWhen the last flicker died\n\n[Bridge]\nThe rail runs straight\nBut the train don\u2019t call\nEmpty grain bins by the silo wall\nStill the wind carries voices low\nOf what was planted long ago",
+                    "gpt_description_prompt": "The Last Flicker Died\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 194.0,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:07:05.392Z",
+                "is_public": false,
+                "reaction": {
+                    "play_count": 1,
+                    "skip_count": 0,
+                    "flagged": false,
+                    "updated_at": "2025-11-30T06:07:41.938Z"
+                },
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "dark americana, folk, southern folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 0
+            },
+            "relative_index": 134.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "No Fire Left",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "ab333847-2877-4088-b243-1f245f989c10",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/ab333847-2877-4088-b243-1f245f989c10.mp3",
+                "image_url": "https://cdn2.suno.ai/image_ab333847-2877-4088-b243-1f245f989c10.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_ab333847-2877-4088-b243-1f245f989c10.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "rhythmic, with tension building under quiet restraint., folk, joined by a low thrum of upright bass and sparse percussion. the mood is brooding yet simmering, with a thudding and deliberate delivery. acoustic guitar drives the rhythm, southern folk, quiet but fierce rhythmic male vocals, dark americana, male vocals",
+                    "prompt": "[Verse]\nThe wind speaks low\nIt don\u2019t shout\nGrain in the silo\nThe rats moved out\nFence posts lean\nBut they still hold\nAin\u2019t no fire left in this cold\n\n[Chorus]\nNo fire left\nNo fire to burn\nAshes settle where the wheels don\u2019t turn\nNo fire left\nThe smoke has flown\nJust shadows here\nAnd we\u2019re alone\n\n[Verse 2]\nA plow rusts where the ground don\u2019t give\nA man can work\nBut he can\u2019t just live\nThe dogs don\u2019t bark\nThey only stare\nThere\u2019s something wrong out in the air\n\n[Prechorus]\nNot a crack\nNot a creak\nNot a whisper breaks\nJust the sound of time\nAnd what it takes\n\n[Chorus]\nNo fire left\nNo fire to burn\nAshes settle where the wheels don\u2019t turn\nNo fire left\nThe smoke has flown\nJust shadows here\nAnd we\u2019re alone\n\n[Bridge]\nThe sky ain\u2019t blue\nIt\u2019s a sullen gray\nPromises made\nThey just decay\nA voice once loud\nNow a bitter hum\nThe road runs long\nBut the end won\u2019t come",
+                    "gpt_description_prompt": "No Fire Left\n\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 189.08,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:06:53.434Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "folk, southern folk, dark americana",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 1
+            },
+            "relative_index": 133.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "No Fire Left",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "368839f2-9e94-47fd-a674-50e03591f452",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/368839f2-9e94-47fd-a674-50e03591f452.mp3",
+                "image_url": "https://cdn2.suno.ai/image_368839f2-9e94-47fd-a674-50e03591f452.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_368839f2-9e94-47fd-a674-50e03591f452.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "rhythmic, with tension building under quiet restraint., folk, joined by a low thrum of upright bass and sparse percussion. the mood is brooding yet simmering, with a thudding and deliberate delivery. acoustic guitar drives the rhythm, southern folk, quiet but fierce rhythmic male vocals, dark americana, male vocals",
+                    "prompt": "[Verse]\nThe wind speaks low\nIt don\u2019t shout\nGrain in the silo\nThe rats moved out\nFence posts lean\nBut they still hold\nAin\u2019t no fire left in this cold\n\n[Chorus]\nNo fire left\nNo fire to burn\nAshes settle where the wheels don\u2019t turn\nNo fire left\nThe smoke has flown\nJust shadows here\nAnd we\u2019re alone\n\n[Verse 2]\nA plow rusts where the ground don\u2019t give\nA man can work\nBut he can\u2019t just live\nThe dogs don\u2019t bark\nThey only stare\nThere\u2019s something wrong out in the air\n\n[Prechorus]\nNot a crack\nNot a creak\nNot a whisper breaks\nJust the sound of time\nAnd what it takes\n\n[Chorus]\nNo fire left\nNo fire to burn\nAshes settle where the wheels don\u2019t turn\nNo fire left\nThe smoke has flown\nJust shadows here\nAnd we\u2019re alone\n\n[Bridge]\nThe sky ain\u2019t blue\nIt\u2019s a sullen gray\nPromises made\nThey just decay\nA voice once loud\nNow a bitter hum\nThe road runs long\nBut the end won\u2019t come",
+                    "gpt_description_prompt": "No Fire Left\n\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 161.84,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:06:53.434Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "folk, southern folk, dark americana",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 0
+            },
+            "relative_index": 132.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "Two Steps Into the Void",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "84eb1bcb-314f-4700-8724-ba248bd8000e",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/84eb1bcb-314f-4700-8724-ba248bd8000e.mp3",
+                "image_url": "https://cdn2.suno.ai/image_84eb1bcb-314f-4700-8724-ba248bd8000e.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_84eb1bcb-314f-4700-8724-ba248bd8000e.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "with faint, male vocals, quiet but fierce rhythmic male vocals. acoustic guitar with a low, steady thrum; sharp, southern folk, dark americana folk, percussive fingerpicking accents. sparse upright bass lines, building tension. 150\u2013240 seconds., rhythmic, thudding vocal delivery, atmospheric harmonica wails. rhythmic, folk",
+                    "prompt": "[Verse]\nTwo steps forward\nThe ground don\u2019t hold\nThe air gets thinner\nThe nights grow cold\nA shadow whispers\nIt don\u2019t ask why\nA man stands taller when he don\u2019t comply\n\n[Chorus]\nTwo steps into the void\nThe world won\u2019t fill that hollow noise\nTwo steps\nNo ground\nNo sky\nOnly the truth keeps a man alive\n\n[Verse 2]\nThe line they drew\nIt don\u2019t stay straight\nCrooked hands measure a man\u2019s own weight\nBarbed wire talk\nA soft man\u2019s cage\nThe lock\u2019s been rusted\nThe key\u2019s my rage\n\n[Prechorus]\nDon\u2019t speak their words\nDon\u2019t wear their chains\nFreedom ain\u2019t quiet\nIt burns through veins\n\n[Chorus]\nTwo steps into the void\nThe world won\u2019t fill that hollow noise\nTwo steps\nNo ground\nNo sky\nOnly the truth keeps a man alive\n\n[Bridge]\nThe stars above\nThey don\u2019t pick sides\nBut I\u2019ll take mine and I\u2019ll take pride\nThe hawk don\u2019t answer\nIt only soars\nIt\u2019s the silence that\u2019s mine\nAnd nothing more",
+                    "gpt_description_prompt": "Two Steps Into the Void\n\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 184.08,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:06:48.374Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "southern folk, dark americana, acoustic folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 1
+            },
+            "relative_index": 131.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "Two Steps Into the Void",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "2f0da05f-8c77-44dc-b57a-b253efbf9546",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/2f0da05f-8c77-44dc-b57a-b253efbf9546.mp3",
+                "image_url": "https://cdn2.suno.ai/image_2f0da05f-8c77-44dc-b57a-b253efbf9546.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_2f0da05f-8c77-44dc-b57a-b253efbf9546.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "with faint, male vocals, quiet but fierce rhythmic male vocals. acoustic guitar with a low, steady thrum; sharp, southern folk, dark americana folk, percussive fingerpicking accents. sparse upright bass lines, building tension. 150\u2013240 seconds., rhythmic, thudding vocal delivery, atmospheric harmonica wails. rhythmic, folk",
+                    "prompt": "[Verse]\nTwo steps forward\nThe ground don\u2019t hold\nThe air gets thinner\nThe nights grow cold\nA shadow whispers\nIt don\u2019t ask why\nA man stands taller when he don\u2019t comply\n\n[Chorus]\nTwo steps into the void\nThe world won\u2019t fill that hollow noise\nTwo steps\nNo ground\nNo sky\nOnly the truth keeps a man alive\n\n[Verse 2]\nThe line they drew\nIt don\u2019t stay straight\nCrooked hands measure a man\u2019s own weight\nBarbed wire talk\nA soft man\u2019s cage\nThe lock\u2019s been rusted\nThe key\u2019s my rage\n\n[Prechorus]\nDon\u2019t speak their words\nDon\u2019t wear their chains\nFreedom ain\u2019t quiet\nIt burns through veins\n\n[Chorus]\nTwo steps into the void\nThe world won\u2019t fill that hollow noise\nTwo steps\nNo ground\nNo sky\nOnly the truth keeps a man alive\n\n[Bridge]\nThe stars above\nThey don\u2019t pick sides\nBut I\u2019ll take mine and I\u2019ll take pride\nThe hawk don\u2019t answer\nIt only soars\nIt\u2019s the silence that\u2019s mine\nAnd nothing more",
+                    "gpt_description_prompt": "Two Steps Into the Void\n\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 172.16,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:06:48.374Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "southern folk, dark americana, acoustic folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 0
+            },
+            "relative_index": 130.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "Cold Hands of the Wind",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "49b9aca4-d92d-4496-b54e-3507270e1650",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/49b9aca4-d92d-4496-b54e-3507270e1650.mp3",
+                "image_url": "https://cdn2.suno.ai/image_49b9aca4-d92d-4496-b54e-3507270e1650.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_49b9aca4-d92d-4496-b54e-3507270e1650.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "and the occasional moan of a fiddle. rhythmic delivery, resonator guitar, southern folk, dark americana, leaning into the raw edges of the voice. 150-240 seconds., brushed snare, folk, rhythmic, quiet but fierce rhythmic male vocals. sparse instrumentation: a hollow thump of bass drum, male vocals",
+                    "prompt": "[Verse]\nThe hills rise jagged\nBlack as a crow\nUnder skies that won't let go\nWon't let go\nBarbed fences hum like they got a tune\nTo secrets buried under a hunter's moon\n\n[Chorus]\nCold hands of the wind\nThey\u2019re pulling me near\nWhispering truths that I don\u2019t want to hear\nCold hands of the wind\nThey\u2019ll rattle your door\nDon\u2019t come for the meek\nThey come for the core\n\n[Verse 2]\nThe river bends sharp where the willows lean\nPast tracks that split\nAnd a world between\nThere\u2019s a whistle that echoes\nLow and long\nIt\u2019s been crying the same old forgotten song\n\n[Prechorus]\nAnd the ground don\u2019t give\nNo\nThe ground don\u2019t give\nBut it remembers what you did\n\n[Chorus]\nCold hands of the wind\nThey\u2019re pulling me near\nWhispering truths that I don\u2019t want to hear\nCold hands of the wind\nThey\u2019ll rattle your door\nDon\u2019t come for the meek\nThey come for the core\n\n[Bridge]\nAnd who stands tall when the line is drawn?\nWho holds their breath when the air is gone?\nThe wind don\u2019t pick sides\nIt\u2019ll strip you bare\nBlow through the bones of a world unfair",
+                    "gpt_description_prompt": "Cold Hands of the Wind\n\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 173.0,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:06:26.408Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "folk, americana, southern folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 1
+            },
+            "relative_index": 129.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "Cold Hands of the Wind",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "732aa374-4476-40d6-bc91-be30c5a5d9dd",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/732aa374-4476-40d6-bc91-be30c5a5d9dd.mp3",
+                "image_url": "https://cdn2.suno.ai/image_732aa374-4476-40d6-bc91-be30c5a5d9dd.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_732aa374-4476-40d6-bc91-be30c5a5d9dd.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "and the occasional moan of a fiddle. rhythmic delivery, resonator guitar, southern folk, dark americana, leaning into the raw edges of the voice. 150-240 seconds., brushed snare, folk, rhythmic, quiet but fierce rhythmic male vocals. sparse instrumentation: a hollow thump of bass drum, male vocals",
+                    "prompt": "[Verse]\nThe hills rise jagged\nBlack as a crow\nUnder skies that won't let go\nWon't let go\nBarbed fences hum like they got a tune\nTo secrets buried under a hunter's moon\n\n[Chorus]\nCold hands of the wind\nThey\u2019re pulling me near\nWhispering truths that I don\u2019t want to hear\nCold hands of the wind\nThey\u2019ll rattle your door\nDon\u2019t come for the meek\nThey come for the core\n\n[Verse 2]\nThe river bends sharp where the willows lean\nPast tracks that split\nAnd a world between\nThere\u2019s a whistle that echoes\nLow and long\nIt\u2019s been crying the same old forgotten song\n\n[Prechorus]\nAnd the ground don\u2019t give\nNo\nThe ground don\u2019t give\nBut it remembers what you did\n\n[Chorus]\nCold hands of the wind\nThey\u2019re pulling me near\nWhispering truths that I don\u2019t want to hear\nCold hands of the wind\nThey\u2019ll rattle your door\nDon\u2019t come for the meek\nThey come for the core\n\n[Bridge]\nAnd who stands tall when the line is drawn?\nWho holds their breath when the air is gone?\nThe wind don\u2019t pick sides\nIt\u2019ll strip you bare\nBlow through the bones of a world unfair",
+                    "gpt_description_prompt": "Cold Hands of the Wind\n\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 172.32,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:06:26.408Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "folk, americana, southern folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 0
+            },
+            "relative_index": 128.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "The Night Dragged Me Under",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "90d5352d-578c-4f3f-8d95-a10fee73a0c8",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/90d5352d-578c-4f3f-8d95-a10fee73a0c8.mp3",
+                "image_url": "https://cdn2.suno.ai/image_90d5352d-578c-4f3f-8d95-a10fee73a0c8.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_90d5352d-578c-4f3f-8d95-a10fee73a0c8.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "with sparse acoustic guitar and minimal percussion. the delivery is intense yet restrained, thudding rhythm drives the song, folk, male vocals, dark americana folk, brooding tension. harmonica accents can punctuate the verses for texture., creating an ominous, southern folk. quiet but fierce rhythmic male vocals. a steady, rhythmic",
+                    "prompt": "[Verse]\nThe moon's a dull coin\nTarnished and spent\nShadows stretch long where the road is bent\nA coyote's cry\nSharp as a blade\nCut through the silence the stars had made\n\n[Prechorus]\nAnd the night\nOh the night\nIt took me whole\nIt swallowed my heart\nIt claimed my soul\n\n[Chorus]\nThe night dragged me under\nNo place to hide\nIt pulled me down like the undertide\nThe night dragged me under\nCold and wide\nLeft me chasing a ghost on the other side\n\n[Verse 2]\nI saw her face in the window's glare\nBut when I turned\nShe wasn\u2019t there\nThe wind carried whispers\nSoft and low\nWords from a time I no longer know\n\n[Prechorus]\nAnd the night\nOh the night\nIt staked its claim\nIt burned my past\nErased my name\n\n[Chorus]\nThe night dragged me under\nNo place to hide\nIt pulled me down like the undertide\nThe night dragged me under\nCold and wide\nLeft me chasing a ghost on the other side",
+                    "gpt_description_prompt": "The Night Dragged Me Under\n\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 179.96,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:06:17.974Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "folk, americana, dark folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 1
+            },
+            "relative_index": 127.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "The Night Dragged Me Under",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "4940e169-9053-478e-93fe-1bf002e4a8f1",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/4940e169-9053-478e-93fe-1bf002e4a8f1.mp3",
+                "image_url": "https://cdn2.suno.ai/image_4940e169-9053-478e-93fe-1bf002e4a8f1.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_4940e169-9053-478e-93fe-1bf002e4a8f1.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "with sparse acoustic guitar and minimal percussion. the delivery is intense yet restrained, thudding rhythm drives the song, folk, male vocals, dark americana folk, brooding tension. harmonica accents can punctuate the verses for texture., creating an ominous, southern folk. quiet but fierce rhythmic male vocals. a steady, rhythmic",
+                    "prompt": "[Verse]\nThe moon's a dull coin\nTarnished and spent\nShadows stretch long where the road is bent\nA coyote's cry\nSharp as a blade\nCut through the silence the stars had made\n\n[Prechorus]\nAnd the night\nOh the night\nIt took me whole\nIt swallowed my heart\nIt claimed my soul\n\n[Chorus]\nThe night dragged me under\nNo place to hide\nIt pulled me down like the undertide\nThe night dragged me under\nCold and wide\nLeft me chasing a ghost on the other side\n\n[Verse 2]\nI saw her face in the window's glare\nBut when I turned\nShe wasn\u2019t there\nThe wind carried whispers\nSoft and low\nWords from a time I no longer know\n\n[Prechorus]\nAnd the night\nOh the night\nIt staked its claim\nIt burned my past\nErased my name\n\n[Chorus]\nThe night dragged me under\nNo place to hide\nIt pulled me down like the undertide\nThe night dragged me under\nCold and wide\nLeft me chasing a ghost on the other side",
+                    "gpt_description_prompt": "The Night Dragged Me Under\n\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 151.88,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:06:17.974Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "folk, americana, dark folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 0
+            },
+            "relative_index": 126.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "Black Air Rising",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "d5efcdd1-891b-4280-8ab2-0ab44a3b0259",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/d5efcdd1-891b-4280-8ab2-0ab44a3b0259.mp3",
+                "image_url": "https://cdn2.suno.ai/image_d5efcdd1-891b-4280-8ab2-0ab44a3b0259.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_d5efcdd1-891b-4280-8ab2-0ab44a3b0259.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "dark americana folk, male vocals, quiet but fierce rhythmic male vocals. a brooding acoustic arrangement driven by percussive guitar thuds and sparse upright bass. vocal delivery should be rhythmic and deliberate, southern folk, with an air of restrained intensity. subtle harmonica or slide guitar can accent moments for texture, keeping the atmosphere taut and minimal., rhythmic, folk",
+                    "prompt": "[Verse 1]\nWind on the wires\nSnapping sharp and low\nBitter ash taste\nWhere the hollows grow\nThe river runs thick\nSlow as old regret\nA man can\u2019t shake the things he ain\u2019t done yet\n\n[Prechorus]\nThe sky don\u2019t care for the ground below\nAnd the ground don\u2019t care if the seeds won\u2019t grow\n\n[Chorus]\nBlack air rising\nHeavy on the skin\nIt don\u2019t ask mercy\nIt don\u2019t let you win\nBlack air rising\nCutting like a blade\nWhere the line is drawn\nWhere the choices are made\n\n[Verse 2]\nA house with no roof\nWalls made of pride\nA chain that won\u2019t break\nNo matter how you try\nVoices like gravel\nA warning in the night\nThe truth ain\u2019t soft\nBut it shines cold white\n\n[Prechorus]\nNo path is straight when the world tilts wrong\nNo fire burns out if you stoke it too long\n\n[Chorus]\nBlack air rising\nHeavy on the skin\nIt don\u2019t ask mercy\nIt don\u2019t let you win\nBlack air rising\nCutting like a blade\nWhere the line is drawn\nWhere the choices are made",
+                    "gpt_description_prompt": "Black Air Rising\n\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 246.16,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:06:07.877Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "dark americana, folk, southern gothic",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 1
+            },
+            "relative_index": 125.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "Black Air Rising",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "5d862dcd-93fb-4887-8710-b87ff8d601f0",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/5d862dcd-93fb-4887-8710-b87ff8d601f0.mp3",
+                "image_url": "https://cdn2.suno.ai/image_5d862dcd-93fb-4887-8710-b87ff8d601f0.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_5d862dcd-93fb-4887-8710-b87ff8d601f0.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "dark americana folk, male vocals, quiet but fierce rhythmic male vocals. a brooding acoustic arrangement driven by percussive guitar thuds and sparse upright bass. vocal delivery should be rhythmic and deliberate, southern folk, with an air of restrained intensity. subtle harmonica or slide guitar can accent moments for texture, keeping the atmosphere taut and minimal., rhythmic, folk",
+                    "prompt": "[Verse 1]\nWind on the wires\nSnapping sharp and low\nBitter ash taste\nWhere the hollows grow\nThe river runs thick\nSlow as old regret\nA man can\u2019t shake the things he ain\u2019t done yet\n\n[Prechorus]\nThe sky don\u2019t care for the ground below\nAnd the ground don\u2019t care if the seeds won\u2019t grow\n\n[Chorus]\nBlack air rising\nHeavy on the skin\nIt don\u2019t ask mercy\nIt don\u2019t let you win\nBlack air rising\nCutting like a blade\nWhere the line is drawn\nWhere the choices are made\n\n[Verse 2]\nA house with no roof\nWalls made of pride\nA chain that won\u2019t break\nNo matter how you try\nVoices like gravel\nA warning in the night\nThe truth ain\u2019t soft\nBut it shines cold white\n\n[Prechorus]\nNo path is straight when the world tilts wrong\nNo fire burns out if you stoke it too long\n\n[Chorus]\nBlack air rising\nHeavy on the skin\nIt don\u2019t ask mercy\nIt don\u2019t let you win\nBlack air rising\nCutting like a blade\nWhere the line is drawn\nWhere the choices are made",
+                    "gpt_description_prompt": "Black Air Rising\n\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 169.88,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:06:07.877Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "dark americana, folk, southern gothic",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 0
+            },
+            "relative_index": 124.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "Shiverline",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "d76d0850-ca36-44f1-8306-d94476692668",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/d76d0850-ca36-44f1-8306-d94476692668.mp3",
+                "image_url": "https://cdn2.suno.ai/image_d76d0850-ca36-44f1-8306-d94476692668.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_d76d0850-ca36-44f1-8306-d94476692668.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "rhythmic, male vocals, percussive delivery. occasional tremolo baritone guitar swells for tension. arrangement builds subtly across verses, close-mic\u2019d, then strips down hard for the final chorus., dark americana / southern folk bed with low-tuned acoustic guitar, porch-board stomp, and brushed floor toms. sparse upright bass doubles the vocal rhythm. male vocals, dry, folk, with a quiet but fierce",
+                    "prompt": "[Verse 1]\nLate road\nWhite line\nTobacco jar on the dash\nPast nine\nCounty sign shot through\nOld man mutters\n\"They forgot about you\"\nMill gate chained tight\nKids in camo hats flick their lights\nMama\u2019s note on the fridge\n\"Don\u2019t trust what they say from the bridge\"\n\n[Chorus]\nShiverline\nShiverline\nRight down the map they drew in brine\nWe\u2019re the side they underline\nBut they don\u2019t see us\nShiverline\nShiverline\nCold in the shade of their tall headline\nWe hold the ground they call behind\nBut they don\u2019t own us\n\n[Verse 2]\nTalk loud\nTalk cheap\nTie a flag to a truck\nLet it beep\nSmile wide\nSoft hands\nNever stood where the sirens land\nCourt steps\nClosed door\nFine print carves out the poor\nWe remember who lied\nWe write their names on the county sign\n\n[Chorus]\nShiverline\nShiverline\nRight down the map they drew in brine\nWe\u2019re the side they underline\nBut they don\u2019t see us\nShiverline\nShiverline\nCold in the shade of their tall headline\nWe hold the ground they call behind\nBut they don\u2019t own us\n\n[Bridge]\nWho sold the plant for a plane ride?\nWho taxed the farm for a landslide?\nWho calls us strange when we\u2019re home side?\nName \u2019em\nName \u2019em out loud\nWe won\u2019t kneel in their bright crowd\n\n[Chorus]\nShiverline\nShiverline\nRight down the map they drew in brine\nWe\u2019re the side they underline\nBut they don\u2019t see us\nShiverline\nShiverline\nCold in the shade of their tall headline\nWe hold the ground they call behind\nBut they don\u2019t own us",
+                    "gpt_description_prompt": "Shiverline\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 149.0,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:05:29.528Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "dark americana, folk, southern folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 1
+            },
+            "relative_index": 123.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "Shiverline",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "20b4c21c-e957-4bae-a6da-7de4075c68c4",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/20b4c21c-e957-4bae-a6da-7de4075c68c4.mp3",
+                "image_url": "https://cdn2.suno.ai/image_20b4c21c-e957-4bae-a6da-7de4075c68c4.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_20b4c21c-e957-4bae-a6da-7de4075c68c4.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "rhythmic, dark americana, and simmering with restrained intensity., quiet but fierce rhythmic male vocals. acoustic guitar and a soft thudding kick drum drive the song forward. the delivery is steady and percussive, male vocals, reflective, with minimal ornamentation but sharp emotional edges. the mood is shadowy, folk, southern folk",
+                    "prompt": "[Verse]\nUnder the wire\nThe copper thread hums\nA crack in the black where the pale moon drums\nThrough hills that don\u2019t whisper\nThey howl at the bone\nI carry the weight\nBut it\u2019s not my own\n\n[Chorus]\nShiverline\nShiverline\nWhere the edge meets the spine\nWhere the cold keeps its hold\nAnd the night won\u2019t unwind\n\n[Verse 2]\nA river runs low\nBut it cuts just the same\nMarked by the rocks\nBut it gives no name\nThe track\u2019s been laid\nBut the train won\u2019t call\nThe trees don\u2019t rise\nThey just watch you fall\n\n[Prechorus]\nAnd the wind pulls tight\nLike a blade to a fight\n\n[Chorus]\nShiverline\nShiverline\nWhere the edge meets the spine\nWhere the cold keeps its hold\nAnd the night won\u2019t unwind\n\n[Bridge]\nDo you know what it costs to stay standing tall?\nWhen the ground doesn\u2019t trust you\nWhen the dark starts to crawl?\nThe words I can\u2019t say keep breaking my jaw\nBut I bite down hard\nHold the line\nTake it all",
+                    "gpt_description_prompt": "Shiverline\n\ndark Americana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 179.0,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:05:29.527Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "dark americana, folk, southern folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 0
+            },
+            "relative_index": 122.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "What the Dark Carried",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "5f6d5ff3-3c0e-409a-8cb7-ab7ee86f9953",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/5f6d5ff3-3c0e-409a-8cb7-ab7ee86f9953.mp3",
+                "image_url": "https://cdn2.suno.ai/image_5f6d5ff3-3c0e-409a-8cb7-ab7ee86f9953.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_5f6d5ff3-3c0e-409a-8cb7-ab7ee86f9953.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "with an almost spoken-word intensity. 180 seconds., male vocals, folk, light percussion tapping like distant hoofbeats. sparse harmonica wails for texture. the vocal delivery is raw and deliberate, americana folk, southern folk. quiet but fierce rhythmic male vocals. acoustic guitar with a steady thudding rhythm, rhythmic",
+                    "prompt": "[Verse]\nThe wind snapped branches\nSharp and thin\nTore through the holler\nA lonesome spin\nTracks of wheels\nLike scars in skin\nThe dark carried what it carried in\n\n[Prechorus]\nA shiver on the backs of hills\nA shadow\nLow\nThat time distills\n\n[Chorus]\nWhat the dark carried\nNo man can tell\nIt whispers soft\nBut it knows too well\nThrough the trees\nThrough the smoke\nThrough the shell\nWhat the dark carried\nIt carried well\n\n[Verse 2]\nA hammer rang where the ridge line breaks\nEchoes follow\nThe mountain shakes\nHands worn raw\nBut they never quake\nThe dark carried more than men could take\n\n[Prechorus]\nThe ground remembers every weight\nThe soil will mark your love\nYour hate\n\n[Chorus]\nWhat the dark carried\nNo man can tell\nIt whispers soft\nBut it knows too well\nThrough the trees\nThrough the smoke\nThrough the shell\nWhat the dark carried\nIt carried well",
+                    "gpt_description_prompt": "What the Dark Carried\n\nAmericana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 84.32,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:05:19.739Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "folk, americana, southern folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 1
+            },
+            "relative_index": 121.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "What the Dark Carried",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "52f94028-8a6a-4989-9623-b11e6355da42",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/52f94028-8a6a-4989-9623-b11e6355da42.mp3",
+                "image_url": "https://cdn2.suno.ai/image_52f94028-8a6a-4989-9623-b11e6355da42.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_52f94028-8a6a-4989-9623-b11e6355da42.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "with an almost spoken-word intensity. 180 seconds., male vocals, folk, light percussion tapping like distant hoofbeats. sparse harmonica wails for texture. the vocal delivery is raw and deliberate, americana folk, southern folk. quiet but fierce rhythmic male vocals. acoustic guitar with a steady thudding rhythm, rhythmic",
+                    "prompt": "[Verse]\nThe wind snapped branches\nSharp and thin\nTore through the holler\nA lonesome spin\nTracks of wheels\nLike scars in skin\nThe dark carried what it carried in\n\n[Prechorus]\nA shiver on the backs of hills\nA shadow\nLow\nThat time distills\n\n[Chorus]\nWhat the dark carried\nNo man can tell\nIt whispers soft\nBut it knows too well\nThrough the trees\nThrough the smoke\nThrough the shell\nWhat the dark carried\nIt carried well\n\n[Verse 2]\nA hammer rang where the ridge line breaks\nEchoes follow\nThe mountain shakes\nHands worn raw\nBut they never quake\nThe dark carried more than men could take\n\n[Prechorus]\nThe ground remembers every weight\nThe soil will mark your love\nYour hate\n\n[Chorus]\nWhat the dark carried\nNo man can tell\nIt whispers soft\nBut it knows too well\nThrough the trees\nThrough the smoke\nThrough the shell\nWhat the dark carried\nIt carried well",
+                    "gpt_description_prompt": "What the Dark Carried\n\nAmericana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 124.96,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:05:19.739Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "folk, americana, southern folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 0
+            },
+            "relative_index": 120.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "Half a Memory Left",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "36fe2533-ad59-49f0-a239-48f2d1a58658",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/36fe2533-ad59-49f0-a239-48f2d1a58658.mp3",
+                "image_url": "https://cdn2.suno.ai/image_36fe2533-ad59-49f0-a239-48f2d1a58658.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_36fe2533-ad59-49f0-a239-48f2d1a58658.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "americana folk, southern folk, deliberate delivery; a mix of grit and yearning. 150\u2013240 seconds., folk, rhythmic, quiet but fierce rhythmic male vocals. acoustic guitar drives the rhythm, with a soft kick-drum thud underlining the pulse. sparse harmonica wails add texture. intense, male vocals",
+                    "prompt": "[Verse 1]\nA map folded wrong\nTorn at the seam\nA town with no sign\nJust a whisper of green\nWheels hum low\nGravel bites at the tread\nChasing shadows of words you once said\n\n[Chorus]\nHalf a memory left\nThat\u2019s all I hold\nSlips through my hands like a thread worn cold\nNot a compass\nNot a guide\nJust a trail where the truth won\u2019t hide\n\n[Verse 2]\nThe courthouse leans\nIts bricks gone pale\nThe flag still flies\nThough the wind feels frail\nI trace your name on a caf\u00e9 glass\nEchoes linger\nBut they never last\n\n[Prechorus]\nWhat\u2019s a promise but a line in the sand?\nSwept away by an unseen hand\n\n[Chorus]\nHalf a memory left\nThat\u2019s all I hold\nSlips through my hands like a thread worn cold\nNot a compass\nNot a guide\nJust a trail where the truth won\u2019t hide\n\n[Bridge]\nA field where the crops don\u2019t grow\nA dog barks sharp where the creek runs low\nI hear your voice in the rustling leaves\nIt calls\nIt fades\nIt never believes",
+                    "gpt_description_prompt": "Half a Memory Left\n\nAmericana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 192.2,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:05:16.241Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "americana folk, southern folk, folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 1
+            },
+            "relative_index": 119.0,
+            "pinned": false
+        },
+        {
+            "clip": {
+                "status": "complete",
+                "title": "Half a Memory Left",
+                "play_count": 0,
+                "upvote_count": 0,
+                "allow_comments": true,
+                "id": "9dc479aa-e615-44e2-9ce8-5a01f9614fd3",
+                "entity_type": "song_schema",
+                "video_url": "",
+                "audio_url": "https://cdn1.suno.ai/9dc479aa-e615-44e2-9ce8-5a01f9614fd3.mp3",
+                "image_url": "https://cdn2.suno.ai/image_9dc479aa-e615-44e2-9ce8-5a01f9614fd3.jpeg",
+                "image_large_url": "https://cdn2.suno.ai/image_large_9dc479aa-e615-44e2-9ce8-5a01f9614fd3.jpeg",
+                "major_model_version": "v5",
+                "model_name": "chirp-crow",
+                "metadata": {
+                    "tags": "americana folk, southern folk, deliberate delivery; a mix of grit and yearning. 150\u2013240 seconds., folk, rhythmic, quiet but fierce rhythmic male vocals. acoustic guitar drives the rhythm, with a soft kick-drum thud underlining the pulse. sparse harmonica wails add texture. intense, male vocals",
+                    "prompt": "[Verse 1]\nA map folded wrong\nTorn at the seam\nA town with no sign\nJust a whisper of green\nWheels hum low\nGravel bites at the tread\nChasing shadows of words you once said\n\n[Chorus]\nHalf a memory left\nThat\u2019s all I hold\nSlips through my hands like a thread worn cold\nNot a compass\nNot a guide\nJust a trail where the truth won\u2019t hide\n\n[Verse 2]\nThe courthouse leans\nIts bricks gone pale\nThe flag still flies\nThough the wind feels frail\nI trace your name on a caf\u00e9 glass\nEchoes linger\nBut they never last\n\n[Prechorus]\nWhat\u2019s a promise but a line in the sand?\nSwept away by an unseen hand\n\n[Chorus]\nHalf a memory left\nThat\u2019s all I hold\nSlips through my hands like a thread worn cold\nNot a compass\nNot a guide\nJust a trail where the truth won\u2019t hide\n\n[Bridge]\nA field where the crops don\u2019t grow\nA dog barks sharp where the creek runs low\nI hear your voice in the rustling leaves\nIt calls\nIt fades\nIt never believes",
+                    "gpt_description_prompt": "Half a Memory Left\n\nAmericana Folk Music, southern folk. quiet but fierce rhythmic male vocals. Rhythmic thudding delivery.\n\n150 - 240 seconds. Song for a right wing audience. \nNot demonic. No religious themes \n\navoid generic default words like: \"Rust, Steel, Red Clay, Dust, Boot, Neon, Velvet, Boots, Bends... \" use them VERY sparingly.",
+                    "type": "gen",
+                    "duration": 166.88,
+                    "refund_credits": false,
+                    "stream": true,
+                    "can_remix": true,
+                    "is_remix": false,
+                    "priority": 10,
+                    "has_stem": false,
+                    "uses_latest_model": true,
+                    "model_badges": {
+                        "songcard": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "0000004D",
+                                "border_color": "00000000"
+                            }
+                        },
+                        "songrow": {
+                            "display_name": "v5",
+                            "light": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C1A",
+                                "border_color": "00000000"
+                            },
+                            "dark": {
+                                "text_color": "FD429C",
+                                "background_color": "FD429C40",
+                                "border_color": "00000000"
+                            }
+                        }
+                    }
+                },
+                "is_liked": false,
+                "user_id": "43b22478-937d-428d-a70c-6c64bd13187f",
+                "display_name": "RealisticSaxophonist1411",
+                "handle": "realisticsaxophonist1411",
+                "is_handle_updated": false,
+                "avatar_image_url": "https://cdn1.suno.ai/sAura19.jpg",
+                "is_trashed": false,
+                "created_at": "2025-11-30T06:05:16.241Z",
+                "is_public": false,
+                "project": {
+                    "id": "9bf8204f-7b2d-46f8-861e-1d5e8347fa90",
+                    "name": "GOTS 4,5,6,7",
+                    "description": "",
+                    "is_trashed": false,
+                    "is_public": false
+                },
+                "ownership": {
+                    "ownership_reason": "subscribed"
+                },
+                "explicit": false,
+                "comment_count": 0,
+                "flag_count": 0,
+                "display_tags": "americana folk, southern folk, folk",
+                "is_contest_clip": false,
+                "has_hook": false,
+                "batch_index": 0
+            },
+            "relative_index": 118.0,
+            "pinned": false
+        }
+    ],
+    "pinned_clips": [],
+    "is_owned": true,
+    "is_trashed": false,
+    "clip_count": 138,
+    "current_page": 1,
+    "shared": false
+}
